@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        h1 {
+            font-size: 100px;
+        }
+
+        .tiger img {
+            width: 100%;
+        }
+
+        .contaniner-two {
+            display: flex;
+        }
+
+        .contaniner-two .split {
+            width: 50%;
+        }
+
+        .split img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .contaniner-two {
+                flex-direction: column-reverse;
+            }
+
+            .contaniner-two .split {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>My Responsive Website</h1>
+    </section>
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/tiger-Siberian.webp" alt="">
+        <h3>Tiger</h3>
+        <img src="images/tiger.jpeg" alt="">
+        <h3>Tiger</h3>
+        <img src="images/tiger.jpg" alt="">
+    </section>
+    <section>
+        <h2>Two Parts</h2>
+        <div class="contaniner-two">
+            <div class="split">
+                <img src="images/food.jpeg" alt="">
+            </div>
+            <div class="split">
+                <img src="images/fresh-fruits.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
